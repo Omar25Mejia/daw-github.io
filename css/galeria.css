@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing:border-box;
+	
+}
+body{
+    background-color: #f1f6f9; 
+}
+#titulo{
+    margin-top: 30px;
+}
+
+h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 0px 0px 6px #fff;
+    margin-top: 300px;
+    
+}
+
+h4{
+    margin:100px;
+    margin-left:300px;
+    margin-right:250px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.contenido{
+    height: 190px;
+	width:160px;
+	margin: auto;
+	perspective: 1000px;
+	position: relative;
+	margin-top: 100px;
+}
+
+.contenido_galeria{
+	width: 100%;
+	position: absolute;
+	animation: rotar 10s infinite linear;
+	transform-style: preserve-3d;
+}
+.contenido_galeria:hover{
+	animation-play-state: paused;
+	cursor:pointer;
+}
+.contenido_galeria figure{
+	width: 120%;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: 0px 0px 20px 0px black;
+	transition: all 300ms;
+}
+.contenido_galeria figure:hover{
+	box-shadow: 0px 0px 0px 0px black;
+	transition: all 300ms;
+}
+
+
+.contenido_galeria figure:nth-child(1){transform: rotateY(36deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(2){transform: rotateY(72deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(3){transform: rotateY(108deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(4){transform: rotateY(144deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(5){transform: rotateY(180deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(6){transform: rotateY(216deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(7){transform: rotateY(252deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(8){transform: rotateY(288deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(9){transform: rotateY(324deg) translateZ(300px);}
+.contenido_galeria figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+
+.contenido_galeria img{
+	width: 100%;
+	transition: all 300ms;
+}
+.contenido_galeria img:hover{
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from{
+		transform: rotateY(0deg);
+	}to{
+		transform: rotateY(360deg);
+	}
+}
+
+.contenido_imagenes{
+    padding-top: 30px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	max-width: 1000px;
+	margin: auto;
+	flex-wrap: wrap;
+}
+.contenido_imagenes img{
+	width: 300px;
+	height: 200px;
+	margin-bottom: 30px;
+	object-fit:cover;
+	cursor: pointer;
+	animation-play-state:paused;
+	filter: brightness(70%);
+	animation:escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+	to{
+		transform: scale(1);
+	}
+	from{
+		transform: scale(1.05);
+	}
+}
+.contenido_imagenes img:hover{
+	filter:brightness(100%);
+	animation-play-state:paused;
+
+}

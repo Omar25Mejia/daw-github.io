@@ -1,0 +1,455 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+header{
+background-color:white;
+width: 100%;}
+
+html { 
+  background: url("../img/wp.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #575757;
+}
+
+footer{
+  margin-bottom: 0;	
+}
+
+#vmovil{
+	display: none;
+}
+
+#logo1{
+	height: 45px;
+	display: inline-block;
+	float: left;
+}
+
+#logo2{
+	margin-right: 5px;
+	height: 45px;
+	display: inline-block;
+	float: right;
+}
+#menu{
+	background-color: #0B2161;
+	width: 100%;
+	height: 45px;
+	padding: 4px;
+	display: inline-block;
+
+}
+
+.boton{
+	margin-top: 0;
+	padding: 10px;
+	font-size: 20px;
+	display: inline-block;
+	height: 25px;
+	margin:5px;
+	margin-left: 10px;
+	font-family:Impact, Charcoal, sans-serif;
+	color: white;
+
+}
+
+.boton:hover{
+	background-color: #DF0101;
+	color: white;
+	transform: scale(1.4);
+	transition: transform 0,1s;
+	border-radius: 0px;
+	
+}
+
+#linea{
+	margin-bottom: 0;
+	width: 100%;
+	border: solid 5px;
+	border-color: #DF0101;
+}
+
+#contenedor{
+	font-family:helvética, arial;
+	width: 65%;
+	margin-top: 50px;
+	border-radius: 20px;
+	display: inline-block;
+    -webkit-box-shadow: -1px -1px 52px 2px rgba(255,255,255,0.68);
+    -moz-box-shadow: -1px -1px 52px 2px rgba(255,255,255,0.68);
+    box-shadow: -1px -1px 52px 2px rgba(255,255,255,0.68);
+    background-color: white;
+ 	padding: 35px;
+ 	margin-bottom: 100px;
+ 	height: auto;
+ 	overflow-x:auto;
+}
+
+
+section{
+	background-color: #0B2161;
+	color: white;
+	width: 90%;
+	height: 55px;
+	margin-top: 15px;
+	border-radius: 20px;
+	padding: 4px;
+}
+
+
+
+h1{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+
+#noticias{
+	margin-top: 25px;
+	column-count: 3;
+	column-gap: 10px;
+}
+
+.facultad img{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	
+}
+
+.facultad img:hover{
+	opacity: 0.7;
+}
+
+.boton a{
+	
+	background-color: #220CC8;
+	color: white;
+	width: 60%;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+
+#hist{
+	width: 100%;
+}
+
+
+#tabla{
+	margin: 50px auto;
+	background: white;
+	color: black;
+	font-size: 13pt;
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #0B2161;
+}
+
+#tabla th{
+	background-color: #0B2161;
+	padding: 10px;
+	color: white;
+
+}
+
+#tabla td{
+	border-style: none;
+	border-width: 0px;
+	border-color: white;
+	padding: 10px;
+	
+}
+
+#tabla tr:hover{
+	background-color: #DF0101;
+	color: white
+}
+
+
+#historiaa{
+	margin-top: 9px;
+width: 90%px;
+	text-align: justify;
+}
+
+
+.slider{
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 60px;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 800%;
+	animation: cambio 10s infinite;
+}
+
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+
+.slider img{
+	width: 95%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0;}
+	20% { margin-left: 0;}
+
+	25% {margin-left:-30%;}
+	45% {margin-left: -30%;}
+
+	50% {margin-left: -60%;}
+	70% {margin-left: -60%;}
+
+	75% {margin-left: -100%;}
+	100% {margin-left: -100%;}
+
+}
+
+
+#social {
+width: 100%;
+height: 86px;
+background-color: #3c6375;
+margin-top: 20px;
+color: white;
+font-family: arial;
+text-align:center;
+padding:0px;
+}
+
+
+#social ul li {
+list-style-type: none;
+text-align:center;
+margin-left:5px;
+}
+
+#social img{
+	width: 40px;
+}
+
+
+#lgo {
+	text-align: center;
+}
+
+#r1{
+	
+	width: 93%;
+	margin: 0 auto;
+	background: none;
+    padding: 32px;
+    border-radius: 20px;
+    box-sizing:border-box;
+}
+
+
+#form{
+	margin-top: 20px;
+	text-align: left;
+	width: 300px;
+}
+
+
+
+input[type="text"], input[type="tel"],input[type="correo"],input[type="password"], input[type="url"], textarea{
+	margin-top: 2px;
+	padding-left: 5px;
+	padding-right:5px;
+	height: 23px;
+	border-radius:5px; 
+	width: 100%;
+}
+
+textarea{
+	height: 80px;
+}
+
+#botonf{
+	background-color: #0B2161;
+	margin-top: 0;
+	padding: 10px;
+	font-size: 15px;
+	display: inline-block;
+	height: 35px;
+	margin:5px;	
+	color: white;
+}
+
+
+#botonf:hover{
+	background-color: #DF0101;
+	color: white;
+	transform: scale(1.15);
+	transition: transform 0.5s;
+	border-radius: 5px;
+}
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #0B2161;
+}
+
+#imgnoticia{
+margin-top: 9px;
+width: 60%;
+}
+
+#udblogo{
+	width: 60%;
+	}
+
+
+@media only screen
+  and (min-width: 320px) 
+  and (max-width: 736px)
+{
+#contenedor{
+ 	overflow-x:auto;}
+
+body {
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a {
+  text-decoration:none;
+}
+
+#vmovil{
+	display: block;
+}
+
+#vpc{
+	display: none;
+}
+
+.nav {
+  position:absolute;
+  width:200px;
+  height:100vh;
+  top:0;
+  left:-220px;
+  padding-top:47px;
+  background-color: #404968;
+  border-right:4px solid;
+  transition:all .5s ease;
+  color: white;
+}
+   
+.opc {
+     display:block;
+     width:96%;
+     margin:0 auto;
+     line-height:2;
+     position:relative; 
+     font-family: 'Lato', sans-serif;
+     text-align:center;
+     font-size: 25px;
+     color: white;
+   }
+
+
+.menu-movil {
+    position:absolute;
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top:6.5px; 
+    left: 8px; 
+    border-radius:3px;
+    transition: all .5s ease; 
+    z-index:10;
+  }
+
+.menu-movil:before {
+      content:"MENU";
+      font-size:30px;
+      color:white;
+      text-align: center;
+    }
+
+.checkbox {
+      display:none; 
+    }
+.checkbox:checked ~ .nav {
+      left:0px; 
+      width: 100%;
+      
+    }
+.checkbox:checked ~ .main-w {
+      margin-left:200px;
+    }
+
+#noticias{
+	margin-top: 25px;
+	column-count: 1;
+	column-gap: 10px;
+}
+
+
+#imgnoticia{
+margin-top: 9px;
+width: 100%;
+}
+
+#titulonoticia{
+	font-size: 20px;
+}
+
+.slider{
+	height: 95%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 0;
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 1500%;
+	animation: cambio 10s infinite;
+}
+
+#tabla{
+	margin:0;
+	font-size: 8pt;
+}
+
+#contenedor{
+	font-family:helvética, arial;
+	width: 90%;
+	margin-top: 20px;
+ 	margin-bottom: 100px;
+ 	padding: 10px;
+}
+
+#form{
+	width: 90%;
+}
+#mapa{
+width: 90%;
+}
+
+#titulo{
+	margin-top: 20px;
+}
+}
+
+
+
